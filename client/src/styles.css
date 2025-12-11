@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: peru;
+}
+
+#messages-container {
+  background-color: rgb(158, 118, 79);
+  padding: 15px;
+}
+
+#message-name {
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+#message-content {
+  background-color: rgb(207, 199, 199);
+  padding: 5px;
+  margin: 5px;
+}

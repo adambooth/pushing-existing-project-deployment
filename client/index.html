@@ -4,11 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Example App</title>
+    <title>User Input</title>
     <link rel="stylesheet" href="./src/styles.css" />
     <script type="module" src="./src/app.js" defer></script>
   </head>
   <body>
-    <h1>Example App</h1>
+    <h1>User Input</h1>
+    <form id="staff-form">
+      <label for="name">Staff Name: </label>
+      <input type="text" name="name" required />
+      <label for="location">Location: </label>
+      <input type="text" name="location" required />
+      <label for="age">Age: </label>
+      <input type="number" name="age" required min="16" max="65" />
+      <label for="bio">Bio: </label>
+      <input type="text" name="bio" placeholder="optional" />
+      <button type="submit">Submit</button>
+    </form>
+    <form id="message-form">
+      <label for="msg_name">Message Name: </label>
+      <input type="text" name="msg_name" required />
+      <label for="content">Content: </label>
+      <input type="text" name="content" required />
+      <button type="submit">Submit</button>
+    </form>
+    <button id="get-data">Get Data</button>
+    <div id="messages-container"></div>
   </body>
 </html>
